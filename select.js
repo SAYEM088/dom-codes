@@ -25,6 +25,43 @@ ul.append(li);
 
 // modifying the text
 const firstListItem =document.querySelector('.list-items');
+
 console.log(firstListItem.innerHTML);
 console.log(firstListItem.innerText);
 console.log(firstListItem.textContent);
+
+li.innerText ='x-men';
+
+
+// modify attributes & classes
+
+// li.setAttribute('id','main-heading');
+// li.removeAttribute('id')
+
+li.classList.add('list-items')
+// console.log(li.classList.contains('list-items'))
+
+li.remove();
+
+//*** */ */ Traverse The DOM
+
+/*parent Node Traverse */ 
+
+let ulDoc =document.querySelector('ul');
+// console.log(ulDoc.parentNode);
+// console.log(ulDoc.parentElement);
+// console.log(ulDoc.parentNode.parentNode);
+// console.log(ulDoc.parentElement.parentElement);
+
+const html = document.documentElement;
+// console.log(html.parentNode);
+// console.log(html.parentElement);
+
+/* child Node traverse */
+
+// console.log(ul.childNodes)
+// console.log(ul.childElementCount);
+// console.log(ul.firstChild);
+// console.log(ul.lastChild);
+// console.log(ul.childNodes[1])
+ul.childNodes[1].style.color = 'blue'
