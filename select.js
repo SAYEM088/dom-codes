@@ -64,4 +64,14 @@ const html = document.documentElement;
 // console.log(ul.firstChild);
 // console.log(ul.lastChild);
 // console.log(ul.childNodes[1])
-ul.childNodes[1].style.color = 'blue'
+ul.childNodes[1].style.color = 'blue';
+
+
+// ** Sibling Node Traversal;
+
+const div = document.querySelector('div');
+console.log(div.childNodes);
+// console.log(ul.previousSibling);
+// console.log(ul.nextSibling);
+console.log(ul.previousElementSibling);
+console.log(ul.nextElementSibling);

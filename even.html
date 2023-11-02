@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listeners</title>
+    <style>
+        .container{
+            display: flex;
+            gap: 3px;
+            border-radius: 1.5rem;
+        }
+        .boxes{
+            border: 1px solid rgb(0, 204, 255);
+            padding: 1.5rem;
+            border-radius: 1.5rem;
+            
+        }
+        .butt{
+            border: 1px solid rgb(0, 204, 255);
+            border-radius: 1.5rem;
+            width:100%;
+            background: transparent;
+        }
+        .hidden-content{
+            display: none;
+        }
+        .hidden-content.reveal-btn{
+            display: block;
+        }
+        #main-heading{
+            text-align: center;
+            color: rgb(0, 204, 255);
+        }
+        .footer{
+            text-align: center;
+            color: rgb(0, 204, 255);
+            margin-top: 12rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="main-heading">Event Listeners</h1>
+    <div class="container">
+        <button class="butt reveal-btn">Reveal More</button>
+        <div class="boxes hidden-content" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa eligendi, alias fugit velit odio quisquam temporibus! Impedit, qui libero doloremque enim accusamus sapiente. Praesentium nobis quidem nostrum dolorum laboriosam eligendi?</div>
+    </div>
+</div>
+<div class="footer">
+    <hr>
+    <p>SAMiT</p>
+    <hr>
+    <script src="eventscript.js"></script>
+</body>
+
+</html>
